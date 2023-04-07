@@ -13,4 +13,9 @@ public class WidgetFactory : IWidgetFactory
     {
         return new RectangleWidget(coordinates, width, height);
     }
+
+    public BaseWidget CreateSquare(WidgetCoordinates coordinates, int size)
+    {
+        return new SquareWidget(coordinates, size);
+    }
 }

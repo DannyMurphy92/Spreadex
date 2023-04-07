@@ -9,4 +9,6 @@ namespace Spreadex.console.services.factories.interfaces;
 public interface IWidgetFactory
 {
     BaseWidget CreateRectangle(WidgetCoordinates coordinates, int width, int height);
+    BaseWidget CreateSquare(WidgetCoordinates coordinates, int size);
+
 }

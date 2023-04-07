@@ -33,4 +33,21 @@ public class WidgetFactoryTests
         Assert.Equal(expectedCoordinatesOutput, result.GetCoordinatesString());
         Assert.Equal(expectedDimensionsString, result.GetDimensionsString());
     }
+
+    [Fact]
+    public void GivenCreateSquareWithSpecificDimensionsAndLocation_ReturnsRectangleWithCorrectInfo()
+    {
+        var coordinates = new WidgetCoordinates(3, 5);
+        var width = 30;
+
+
+        var expectedCoordinatesOutput = "x=3, y=5";
+        var expectedDimensionsString = "size=30";
+
+        var result = _sut.CreateSquare(coordinates, width);
+
+        Assert.IsType<SquareWidget>(result);
+        Assert.Equal(expectedCoordinatesOutput, result.GetCoordinatesString());
+        Assert.Equal(expectedDimensionsString, result.GetDimensionsString());
+    }
 }
