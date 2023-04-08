@@ -15,9 +15,10 @@ public class EllipseWidget:BaseWidget
 
     public int HorizontalDiameter { get; }
     public int VerticalDiameter { get; }
+    public override string WidgetType => "Ellipse";
 
     public override string GetDimensionsString()
     {
-        return $"horizontal diameter={HorizontalDiameter}, vertical diameter={VerticalDiameter}";
+        return $"diameterH={HorizontalDiameter} diameterV={VerticalDiameter}";
     }
 }

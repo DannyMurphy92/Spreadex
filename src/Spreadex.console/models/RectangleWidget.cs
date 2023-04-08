@@ -9,9 +9,10 @@ public class RectangleWidget: BaseWidget
 
     public int Width { get; }
     public int Height { get; }
+    public override string WidgetType => "Rectangle";
 
     public override string GetDimensionsString()
     {
-        return $"width={Width}, height={Height}";
+        return $"width={Width} height={Height}";
     }
 }

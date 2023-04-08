@@ -12,10 +12,10 @@ public abstract class BaseWidget
         Coordinates = coordinates;
     }
     public WidgetCoordinates Coordinates { get; }
-
+    public abstract string WidgetType { get; }
     public string GetCoordinatesString()
     {
-        return $"x={Coordinates.X}, y={Coordinates.Y}";
+        return $"({Coordinates.X}, {Coordinates.Y})";
     }
 
     public abstract string GetDimensionsString();

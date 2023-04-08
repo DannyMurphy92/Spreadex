@@ -7,6 +7,7 @@ public class SquareWidget: BaseWidget
     }
 
     public int Size { get; }
+    public override string WidgetType => "Square";
 
     public override string GetDimensionsString()
     {

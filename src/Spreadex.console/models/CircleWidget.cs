@@ -14,6 +14,8 @@ public class CircleWidget:BaseWidget
 
     public int Size { get; }
 
+    public override string WidgetType => "Circle";
+
     public override string GetDimensionsString()
     {
         return $"size={Size}";

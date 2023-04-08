@@ -9,7 +9,7 @@ public class WidgetCoordinates
 {
     public WidgetCoordinates(int x, int y)
     {
-        X = x; 
+        X = x;
         Y = y;
     }
 

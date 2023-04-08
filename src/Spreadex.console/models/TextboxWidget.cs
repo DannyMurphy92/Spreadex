@@ -13,10 +13,11 @@ public class TextboxWidget : RectangleWidget
     }
 
     public string Text { get; }
+    public override string WidgetType => "Textbox";
 
     public override string GetDimensionsString()
     {
         var rectangleString = base.GetDimensionsString();
-        return $"{rectangleString}, text=\"{Text}\"";
+        return $"{rectangleString} text=\"{Text}\"";
     }
 }

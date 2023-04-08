@@ -24,8 +24,8 @@ public class WidgetFactoryTests
         var width = 30;
         var height = 40;
 
-        var expectedCoordinatesOutput = "x=3, y=5";
-        var expectedDimensionsString = "width=30, height=40";
+        var expectedCoordinatesOutput = "(3, 5)";
+        var expectedDimensionsString = "width=30 height=40";
 
         var result = _sut.CreateRectangle(coordinates, width, height);
 
@@ -40,7 +40,7 @@ public class WidgetFactoryTests
         var coordinates = new WidgetCoordinates(3, 5);
         var size = 30;
 
-        var expectedCoordinatesOutput = "x=3, y=5";
+        var expectedCoordinatesOutput = "(3, 5)";
         var expectedDimensionsString = "size=30";
 
         var result = _sut.CreateSquare(coordinates, size);
@@ -57,8 +57,8 @@ public class WidgetFactoryTests
         var horizontalDiameter = 30;
         var verticalDiameter = 50;
 
-        var expectedCoordinatesOutput = "x=3, y=5";
-        var expectedDimensionsString = "horizontal diameter=30, vertical diameter=50";
+        var expectedCoordinatesOutput = "(3, 5)";
+        var expectedDimensionsString = "diameterH=30 diameterV=50";
 
         var result = _sut.CreateEllipse(coordinates, horizontalDiameter, verticalDiameter);
 
@@ -73,7 +73,7 @@ public class WidgetFactoryTests
         var coordinates = new WidgetCoordinates(3, 5);
         var size = 30;
 
-        var expectedCoordinatesOutput = "x=3, y=5";
+        var expectedCoordinatesOutput = "(3, 5)";
         var expectedDimensionsString = "size=30";
 
         var result = _sut.CreateCircle(coordinates, size);
@@ -91,8 +91,8 @@ public class WidgetFactoryTests
         var height = 40;
         var inputString = "test string";
 
-        var expectedCoordinatesOutput = "x=3, y=5";
-        var expectedDimensionsString = "width=30, height=40, text=\"test string\"";
+        var expectedCoordinatesOutput = "(3, 5)";
+        var expectedDimensionsString = "width=30 height=40 text=\"test string\"";
 
         var result = _sut.CreateTextbox(coordinates, width, height, inputString);
 
