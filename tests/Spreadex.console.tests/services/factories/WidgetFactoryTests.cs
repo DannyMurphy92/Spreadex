@@ -18,7 +18,7 @@ public class WidgetFactoryTests
     }
 
     [Fact]
-    public void GivenCreateRectangleWithSpecificDimensionsAndLocation_ReturnsRectangleWithCorrectInfo()
+    public void CreateRectangle_GivenSpecificDimensionsAndLocation_ReturnsRectangleWithCorrectInfo()
     {
         var coordinates = new WidgetCoordinates(3, 5);
         var width = 30;
@@ -35,7 +35,7 @@ public class WidgetFactoryTests
     }
 
     [Fact]
-    public void GivenCreateSquareWithSpecificDimensionsAndLocation_ReturnsSquareWithCorrectInfo()
+    public void CreateSquare_GivenSpecificDimensionsAndLocation_ReturnsSquareWithCorrectInfo()
     {
         var coordinates = new WidgetCoordinates(3, 5);
         var size = 30;
@@ -51,7 +51,7 @@ public class WidgetFactoryTests
     }
 
     [Fact]
-    public void GivenCreateEllipseWithSpecificDimensionsAndLocation_ReturnsEllipseWithCorrectInfo()
+    public void CreateEllipse_GivenSpecificDimensionsAndLocation_ReturnsEllipseWithCorrectInfo()
     {
         var coordinates = new WidgetCoordinates(3, 5);
         var horizontalDiameter = 30;
@@ -68,7 +68,7 @@ public class WidgetFactoryTests
     }
 
     [Fact]
-    public void GivenCreateCircleWithSpecificDimensionsAndLocation_ReturnsCircleWithCorrectInfo()
+    public void CreateCircle_GivenSpecificDimensionsAndLocation_ReturnsCircleWithCorrectInfo()
     {
         var coordinates = new WidgetCoordinates(3, 5);
         var size = 30;
@@ -84,7 +84,7 @@ public class WidgetFactoryTests
     }
 
     [Fact]
-    public void GivenCreateTextboxWithSpecificDimensionsAndLocation_ReturnsTextboxWithCorrectInfo()
+    public void CreateTextbox_GivenSpecificDimensionsAndLocation_ReturnsTextboxWithCorrectInfo()
     {
         var coordinates = new WidgetCoordinates(3, 5);
         var width = 30;
